@@ -10,7 +10,7 @@ pipeline {
     stages { 
         stage('Git Checkout Stage') { 
             steps { 
-              checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'stuti-06', url: 'https://github.com/stuti-06/Java.git']]) 
+              checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: '78sai44', url: 'https://github.com/78sai44/java-project2.git']]) 
             } 
         } 
          stage('SonarQube Analysis') { 
